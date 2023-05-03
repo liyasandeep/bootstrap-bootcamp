@@ -2,4 +2,6 @@
 
 > Simple one page website for a bootcamp
 
-Through this project tutorial i explored and studied bootstrap 5
+Through this bootstrap project i explored navs, navbar, buttons, flexbox, cards, typography, images, breakpoints, containers, grid system, columns, Input group, and different utilities
+
+Also explored how to add bootsrap icons
