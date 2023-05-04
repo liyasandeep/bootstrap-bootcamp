@@ -17,6 +17,11 @@
       integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
       crossorigin="anonymous"
     />
+    <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+    rel="stylesheet"
+  />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -344,10 +349,43 @@
         </div>
     </div>
 </section>
+
+<!-- contact and map section -->
+
+<section class="p-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead"><li class="list-group-item"><span class="fw-bold">Main Location:</span> 50 Main st Boston MA</li>
+                <li class="list-group-item"><span class="fw-bold">Enrollment Phone:</span> (555) 555-5555</li>
+                <li class="list-group-item"><span class="fw-bold">Student Phone: </span> (333) 333-3333</li>
+                <li class="list-group-item"><span class="fw-bold">Enrollment Email: </span> (555) enroll@frontendbc.test</li>
+                <li class="list-group-item"><span class="fw-bold">Student Email: </span> student@frontendbc.test</li></ul>
+        </div>
+        <div class="col-md">
+            <div id="map"></div>
+        </div>
+    </div>
+    </div>
+</section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      })
+    </script>
   </body>
 </html>
